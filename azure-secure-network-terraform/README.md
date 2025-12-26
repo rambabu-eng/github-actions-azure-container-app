@@ -1,37 +1,28 @@
-Project overview:
+Project Overview
 # Azure Secure Network Foundation
 
 ## Overview
-This project creates a secure Azure network foundation using Terraform. It includes:
-
+This project creates a secure Azure Network foundation using Terraform. It includes:
 - Resource Group
-- Virtual Network (VNet)
+- Virtual Network (Vnet)
 - Subnets (Web, App, DB)
 - Network Security Groups (NSG)
 - NSG Rules (Allow HTTP)
 
-## Folder Structure
-# Azure Secure Network Foundation
+  ## Folder Structure
+  azure-secure-network-terraform/
+├── terraform/
+│ ├── main.tf
+│ ├── variables.tf
+│ ├── outputs.tf
+│ ├── providers.tf
+│ ├── terraform.tfvars
+└── README.md
 
-## Overview
-This project creates a secure Azure network foundation using Terraform. It includes:
-
-- Resource Group
-- Virtual Network (VNet)
-- Subnets (Web, App, DB)
-- Network Security Groups (NSG)
-- NSG Rules (Allow HTTP)
-
-## Folder Structure
-# Azure Secure Network Foundation
-
-## Overview
-This project creates a secure Azure network foundation using Terraform. It includes:
-
-- Resource Group
-- Virtual Network (VNet)
-- Subnets (Web, App, DB)
-- Network Security Groups (NSG)
-- NSG Rules (Allow HTTP)
-
-## Folder Structure
+## How to Deploy
+1. Install Terraform and Azure CLI
+2. Authenticate with Azure CLI: `az login`
+3. Navigate to `terraform` folder
+4. Initialize Terraform: `terraform init`
+5. Plan deployment: `terraform plan`
+6. Apply deployment: `terraform apply`
