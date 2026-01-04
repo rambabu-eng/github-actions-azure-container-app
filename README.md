@@ -1,12 +1,13 @@
-🚀 Azure Infrastructure Deployment with Bicep & GitHub Actions CI/CD
-📌 Project Overview
+## Azure Infrastructure Deployment with Bicep & GitHub Actions CI/CD
+
+# Project Overview
 
 This project demonstrates end-to-end Azure infrastructure deployment using Bicep, fully automated through GitHub Actions CI/CD pipelines.
 It follows Infrastructure as Code (IaC) best practices with secure authentication, modular design, and environment-based deployments.
 
 The repository showcases how cloud infrastructure can be validated, previewed (What-If), and deployed automatically to Azure using modern DevOps workflows.
 
-🏗️ Architecture & Components
+## Architecture & Components
 
 The solution provisions Azure resources using modular Bicep templates, including:
 
@@ -19,8 +20,7 @@ Application Monitoring (Application Insights)
 Supporting resources as reusable Bicep modules
 
 CI/CD is handled through GitHub Actions, ensuring safe and automated deployments.
-
-📂 Repository Structure
+## Repository Structure
 bicep-azure-cicd-github-actions/
 ├─ infra/
 │  ├─ main.bicep
@@ -38,8 +38,8 @@ bicep-azure-cicd-github-actions/
 ├─ README.md
 └─ .gitignore
 
-🔄 CI/CD Pipeline Overview
-1️⃣ Bicep What-If Pipeline
+## CI/CD Pipeline Overview
+1) Bicep What-If Pipeline
 
 Triggered on Pull Requests
 
@@ -49,7 +49,7 @@ Ensures safe and controlled deployments
 
 Prevents unintended changes before merge
 
-2️⃣ Bicep Deploy Pipeline
+2) Bicep Deploy Pipeline
 
 Triggered on push to main branch
 
@@ -58,45 +58,42 @@ Authenticates to Azure using OIDC (Workload Identity Federation)
 Deploys infrastructure automatically to Azure
 
 No secrets stored in GitHub
+## Security Best Practices
 
-🔐 Security Best Practices
+ OIDC authentication (no client secrets)
 
-✅ OIDC authentication (no client secrets)
+ Azure AD App Registration with federated identity
 
-✅ Azure AD App Registration with federated identity
+Environment-based parameter files
 
-✅ Environment-based parameter files
+ Infrastructure changes validated before deployment
+## Tools & Technologies Used
 
-✅ Infrastructure changes validated before deployment
+ Azure Bicep
 
-🛠️ Tools & Technologies Used
+ GitHub Actions
 
-Azure Bicep
+ Azure Resource Manager (ARM)
 
-GitHub Actions
+ Azure App Service
 
-Azure Resource Manager (ARM)
+ Application Insights
 
-Azure App Service
+ Azure AD (OIDC authentication)
 
-Application Insights
+## VS Code
+# How to Deploy
+ Prerequisites
 
-Azure AD (OIDC authentication)
+ Azure Subscription
 
-VS Code
+ Azure AD App Registration with federated credentials
 
-▶️ How to Deploy
-Prerequisites
+ GitHub repository secrets:
 
-Azure Subscription
+ AZURE_CLIENT_ID
 
-Azure AD App Registration with federated credentials
-
-GitHub repository secrets:
-
-AZURE_CLIENT_ID
-
-AZURE_TENANT_ID
+ AZURE_TENANT_ID
 
 AZURE_SUBSCRIPTION_ID
 
@@ -110,7 +107,7 @@ Merge to main branch
 
 GitHub Actions deploys infrastructure automatically 🚀
 
-🎯 Key Learnings & Outcomes
+## Key Learnings & Outcomes
 
 Hands-on experience with Bicep modular design
 
@@ -120,6 +117,6 @@ Learned Azure OIDC authentication for GitHub workflows
 
 Applied real-world DevOps and IaC best practices
 
-👤 Author
+## Author
 
 This project is part of my Azure Cloud Engineering learning journey, focused on building hands-on, job-ready cloud and DevOps projects using Azure, Bicep, Terraform, and CI/CD pipelines.
